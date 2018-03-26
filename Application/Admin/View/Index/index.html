@@ -1,0 +1,66 @@
+    <script src="__PUBLIC__/Admin/js/highcharts.js"></script>
+    <script src="__PUBLIC__/Admin/js/exporting.js"></script>
+    <!-- <script src="__PUBLIC__/Admin/js/draw.js"></script> -->
+    <!-- 右 -->
+    <div class="content">
+        <!-- header -->
+        <div class="header">
+            <h1 class="page-title">天气</h1>
+        </div>
+        <!-- highchat show -->
+        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        <!-- footer -->
+        <footer>
+            <hr>
+            <p>© 2017 <a href="javascript:void(0);" target="_blank">ADMIN</a></p>
+        </footer>
+    </div>
+<script type="text/javascript">
+    //实例化编辑器
+    $('#container').highcharts({
+        title: {
+            text: '天气',
+            x: -20 //center
+        },
+        subtitle: {
+            text: '来源：tpshop.com',
+            x: -20
+        },
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', ]
+        },
+        yAxis: {
+            title: {
+                text: '温度 (°C)'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: '°C'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: '沈阳',
+            data: [7.0, 6.9, 9.5, 14.5]
+        }, {
+            name: '哈尔滨',
+            data: [-0.2, 0.8, 5.7, 11.3]
+        }, {
+            name: '北京',
+            data: {$beijing}
+        }, {
+            name: '长春',
+            data: [3.9, 4.2, 5.7, 8.5]
+        }]
+    });
+
+</script>

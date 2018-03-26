@@ -1,0 +1,134 @@
+<script type="text/javascript" src="__PUBLIC__/Admin/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <!-- 右 -->
+    <div class="content">
+        <div class="header">
+            <h1 class="page-title">商品新增</h1>
+        </div>
+
+        <!-- add form -->
+        <form action="" method="post" id="tab" enctype="multipart/form-data">
+            <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#basic" data-toggle="tab">基本信息</a></li>
+              <li role="presentation"><a href="#desc" data-toggle="tab">商品描述</a></li>
+              <li role="presentation"><a href="#attr" data-toggle="tab">商品属性</a></li>
+              <li role="presentation"><a href="#pics" data-toggle="tab">商品相册</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="basic">
+                    <div class="well">
+                        <label>商品名称：</label>
+                        <input type="text" name="name" value="" class="input-xlarge">
+                        <label>商品价格：</label>
+                        <input type="text" name="price" value="" class="input-xlarge">
+                        <label>商品数量：</label>
+                        <input type="text" name="number" value="" class="input-xlarge">
+                        <label>商品logo：</label>
+                        <input type="file" name="logo" value="" class="input-xlarge">
+                        <label>商品分类：</label>
+                        <select name="cate_id" class="input-xlarge">
+                            <option value="0">===请选择===</option>
+                            <volist name="cate" id="v">
+                            <option value="{$v.id}">{$v.cate_name}</option>
+                            </volist>
+                        </select>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="desc">
+                    <div class="well">
+                        <label>商品简介：</label>
+                        <textarea id="editor" value="Smith" name="introduce" rows="3" class="input-xlarge" style="width:1024px;height:500px;"></textarea>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="attr">
+                    <div class="well">
+                        <label>商品类型：</label>
+                        <select name="type_id" class="input-xlarge">
+                            <option value="0">==请选择==</option>
+                            <volist name="type" id="v">
+                            <option value="{$v.type_id}">{$v.type_name}</option>
+                            </volist>
+                        </select>
+                       <div id="attrs">
+                           
+                       </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="pics">
+                    <div class="well">
+                        <div>[<a href="javascript:void(0);" class="add">+</a>]商品图片：<input type="file" name="goods_pics[]" value="" class="input-xlarge"></div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit">保存</button>
+            </div>
+        </form>
+        <!-- footer -->
+        <footer>
+            <hr>
+            <p>© 2017 <a href="javascript:void(0);" target="_blank">ADMIN</a></p>
+        </footer>
+    </div>
+    <script type="text/javascript">
+     
+        $(function(){
+            //实例化编辑器
+           var ue = UE.getEditor('editor');
+
+            $('.add').click(function(){
+                var add_div = '<div>[<a href="javascript:void(0);" class="sub">-</a>]商品图片：<input type="file" name="goods_pics[]" value="" class="input-xlarge"></div>';
+                $(this).parent().after(add_div);
+            });
+            $('.sub').live('click',function(){
+                $(this).parent().remove();
+            });
+
+            //给下拉列表绑定change事件
+            $('select[name=type_id]').change(function(){
+                // alert(1);
+                var type_id = $(this).val();
+                // alert(type_id);return;
+                $.ajax({
+                    'url':'__CONTROLLER__/getattr',
+                    'type':'post',
+                    'data':'type_id='+type_id,
+                    'dataType':'json',
+                    'success':function(response){
+                        if(response.code!=10000){
+                            // alert(1);return;
+                            alert(response.msg);
+                        }else{
+                            //获取所有的属性信息
+                            var attrs = response.data;
+                            //遍历拼接html代码字符串
+                            var str = '';
+                            $.each(attrs,function(i,v){
+                                //console.log(v);
+                                //拼接属性名称的显示HTML代码
+                                str +="<label>" + v.attr_name + ": </label>";
+                                if(v.attr_input_type == 0){
+                                    //录入方式为input输入框
+                                    str +="<input type='text' name='attr_value["+v.attr_id+"][]' value='' class='input-xlarge'>"
+                                }else if(v.attr_input_type == 1){
+                                    //录入方式为下拉列表
+                                    str +="<select name='attr_value["+v.attr_id+"][]' class='input-xlarge'>";
+                                    $.each(v.attr_values,function(index,value){
+                                         str +="<option value='"+value+"'>"+value+"</option>";
+                                    })
+                                   
+                                    str +="</select>";
+                                }else{
+                                    //多选框
+                                    $.each(v.attr_values,function(index,value){
+                                        str +="<input type='checkbox' name='attr_value["+v.attr_id+"][]' value='"+ value +"'>" + value;
+                                    });
+                                }
+                            });
+
+                            $('#attrs').html(str);
+                        }
+                    }
+                });
+            })
+        });
+    </script>

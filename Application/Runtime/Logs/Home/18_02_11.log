@@ -1,0 +1,221 @@
+[ 2018-02-11T08:19:09+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.052423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.052516s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0771s ]
+SQL: SELECT * FROM `tpshop_category`  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `tpshop_goods` WHERE `cate_id` = 13 LIMIT 12   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined index: user_info F:\www\tpshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.446125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.446179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.024806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.024848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.024973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025108s ]
+
+[ 2018-02-11T08:19:24+08:00 ] 127.0.0.1 /index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001287s ]
+
+[ 2018-02-11T08:19:34+08:00 ] 127.0.0.1 /index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `tpshop_user` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `tpshop_user` WHERE `username` = '17519404569' AND `password` = '67da035bf2aa20f992549018738af6fc' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tpshop_user` WHERE `email` = '17519404569' AND `password` = '67da035bf2aa20f992549018738af6fc' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_user` WHERE `phone` = '17519404569' AND `password` = '67da035bf2aa20f992549018738af6fc' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.0492s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2018-02-11T08:19:36+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `tpshop_category`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tpshop_category` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `tpshop_goods` WHERE `cate_id` = 13 LIMIT 12   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2018-02-11T08:20:05+08:00 ] 127.0.0.1 /index.php/Home/Index/detail/id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.1226s ]
+SQL: SELECT * FROM `tpshop_goods` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_goodspics` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `tpshop_goodspics` WHERE `goods_id` = 40  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `tpshop_attribute` WHERE `type_id` = 2  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `tpshop_goods_attr` WHERE `goods_id` = 40  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.209013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.209120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2018-02-11T08:20:14+08:00 ] 127.0.0.1 /index.php/Home/Cart/addcart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.0607s ]
+SQL: SELECT * FROM `tpshop_cart` WHERE `user_id` = 1 AND `goods_id` = 40 AND `goods_attr_ids` = '19,21' LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `tpshop_cart` (`user_id`,`goods_id`,`goods_attr_ids`,`number`) VALUES ('1','40','19,21','1') [ RunTime:0.1587s ]
+SQL: SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `tpshop_goods` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001612s ]
+
+[ 2018-02-11T08:20:19+08:00 ] 127.0.0.1 /index.php/Home/Cart/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.0224s ]
+SQL: SELECT * FROM `tpshop_cart` WHERE `user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `tpshop_goods` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.0172s ]
+SQL: SELECT t1.*,t2.attr_name FROM tpshop_goods_attr t1 left join tpshop_attribute as t2 on t1.attr_id = t2.attr_id  WHERE ( t1.id in (19,21) )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.191389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.191440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001053s ]
+
+[ 2018-02-11T08:20:23+08:00 ] 127.0.0.1 /index.php/Home/Cart/changenum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.0224s ]
+SQL: UPDATE `tpshop_cart` SET `number`='2' WHERE `user_id` = 1 AND `goods_id` = 40 AND `goods_attr_ids` = '19,21' [ RunTime:0.1385s ]
+
+[ 2018-02-11T08:20:31+08:00 ] 127.0.0.1 /index.php/Home/Cart/changenum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.0236s ]
+SQL: UPDATE `tpshop_cart` SET `number`='3' WHERE `user_id` = 1 AND `goods_id` = 40 AND `goods_attr_ids` = '19,21' [ RunTime:0.1447s ]
+
+[ 2018-02-11T08:20:35+08:00 ] 127.0.0.1 /index.php/Home/Cart/flow2/cart_ids/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.0206s ]
+SQL: SELECT * FROM `tpshop_address` WHERE `user_id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.0147s ]
+SQL: SELECT c.*,g.goods_name,g.goods_logo,g.goods_price FROM tpshop_cart c left join tpshop_goods as g on c.goods_id = g.id  WHERE ( c.id in (13) )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.0486s ]
+SQL: SELECT t1.*,t2.attr_name FROM tpshop_goods_attr t1 left join tpshop_attribute as t2 on t1.attr_id = t2.attr_id  WHERE ( t1.id in (19,21) )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.256434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.256502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001545s ]
+

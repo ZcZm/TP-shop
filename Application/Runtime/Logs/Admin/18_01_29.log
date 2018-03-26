@@ -1,0 +1,249 @@
+[ 2018-01-29T23:38:58+08:00 ] 127.0.0.1 /index.php/Admin/Index/detail/id/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+
+[ 2018-01-29T23:38:58+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.123509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001145s ]
+
+[ 2018-01-29T23:38:59+08:00 ] 127.0.0.1 /index.php/Admin/Login/captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001474s ]
+
+[ 2018-01-29T23:39:10+08:00 ] 127.0.0.1 /index.php/Admin/Login/ajaxlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `tpshop_manager` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `tpshop_manager` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-01-29T23:39:12+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `tpshop_auth` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `tpshop_auth` WHERE ( pid = 0 and is_nav = 1 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tpshop_auth` WHERE ( pid > 0 and is_nav = 1 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001457s ]
+
+[ 2018-01-29T23:39:16+08:00 ] 127.0.0.1 /index.php/Admin/Goods/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `tpshop_type` [ RunTime:0.1427s ]
+SQL: SELECT * FROM `tpshop_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0209s ]
+SQL: SELECT * FROM `tpshop_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001491s ]
+
+[ 2018-01-29T23:39:58+08:00 ] 127.0.0.1 /index.php/Admin/Goods/getattr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `tpshop_attribute` WHERE `type_id` = 2  [ RunTime:0.0004s ]
+
+[ 2018-01-29T23:40:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.0199s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\www\tpshop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: validate F:\www\tpshop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `tpshop_goods` WHERE `goods_name` = '三只小熊' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto F:\www\tpshop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `tpshop_goods` (`cate_id`,`type_id`,`goods_introduce`,`goods_logo`,`goods_name`,`goods_price`,`goods_number`,`goods_create_time`) VALUES ('13','2','<p><img src=\"/ueditor/php/upload/image/20180129/1517240393802542.jpg\" alt=\"goods01.jpg\" /></p>','/Public/Uploads/2018-01-29/thumb_5a6f4066084df.jpg','三只小熊','666','100','1517240422') [ RunTime:0.0425s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\www\tpshop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\www\tpshop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `tpshop_goodspics` [ RunTime:0.0175s ]
+SQL: INSERT INTO `tpshop_goodspics` (`goods_id`,`pics_big`,`pics_mid`,`pics_sma`) VALUES ('38','/Public/Uploads/2018-01-29/thumb800_5a6f4066277a4.jpg','/Public/Uploads/2018-01-29/thumb350_5a6f4066277a4.jpg','/Public/Uploads/2018-01-29/thumb50_5a6f4066277a4.jpg'),('38','/Public/Uploads/2018-01-29/thumb800_5a6f40662a3b8.jpg','/Public/Uploads/2018-01-29/thumb350_5a6f40662a3b8.jpg','/Public/Uploads/2018-01-29/thumb50_5a6f40662a3b8.jpg') [ RunTime:0.1788s ]
+SQL: SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.0186s ]
+SQL: INSERT INTO `tpshop_goods_attr` (`goods_id`,`attr_id`,`attr_value`) VALUES ('38','2','上海'),('38','3','蟹黄'),('38','3','麻辣'),('38','3','葱香'),('38','4','袋装'),('38','5','200g') [ RunTime:0.1719s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2018-01-29T23:40:24+08:00 ] 127.0.0.1 /index.php/Admin/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.0199s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_goods` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`goods_name`,`goods_price`,`goods_number`,`goods_logo`,`goods_create_time` FROM `tpshop_goods` ORDER BY id desc LIMIT 0,3   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001986s ]
+
+[ 2018-01-29T23:42:29+08:00 ] 127.0.0.1 /index.php/Admin/Goods/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+SQL: SHOW COLUMNS FROM `tpshop_type` [ RunTime:0.0177s ]
+SQL: SELECT * FROM `tpshop_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `tpshop_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001229s ]
+
+[ 2018-01-29T23:43:02+08:00 ] 127.0.0.1 /index.php/Admin/Goods/getattr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+SQL: SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.0174s ]
+SQL: SELECT * FROM `tpshop_attribute` WHERE `type_id` = 2  [ RunTime:0.0004s ]
+
+[ 2018-01-29T23:43:19+08:00 ] 127.0.0.1 /index.php/Admin/Goods/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+SQL: SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.0195s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\www\tpshop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: validate F:\www\tpshop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `tpshop_goods` WHERE `goods_name` = '板栗皮皮' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto F:\www\tpshop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `tpshop_goods` (`cate_id`,`type_id`,`goods_introduce`,`goods_logo`,`goods_name`,`goods_price`,`goods_number`,`goods_create_time`) VALUES ('13','2','<p><img src=\"/ueditor/php/upload/image/20180129/1517240579100677.jpg\" alt=\"goods01.jpg\" /></p>','/Public/Uploads/2018-01-29/thumb_5a6f41172143f.jpg','板栗皮皮','2','5000','1517240599') [ RunTime:0.1248s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\www\tpshop\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `tpshop_goodspics` [ RunTime:0.0146s ]
+SQL: INSERT INTO `tpshop_goodspics` (`goods_id`,`pics_big`,`pics_mid`,`pics_sma`) VALUES ('39','/Public/Uploads/2018-01-29/thumb800_5a6f41174f29a.jpg','/Public/Uploads/2018-01-29/thumb350_5a6f41174f29a.jpg','/Public/Uploads/2018-01-29/thumb50_5a6f41174f29a.jpg') [ RunTime:0.1647s ]
+SQL: SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.0165s ]
+SQL: INSERT INTO `tpshop_goods_attr` (`goods_id`,`attr_id`,`attr_value`) VALUES ('39','2','哈尔滨'),('39','3','原味'),('39','3','蟹黄'),('39','4','盒装'),('39','5','500g') [ RunTime:0.1738s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2018-01-29T23:43:21+08:00 ] 127.0.0.1 /index.php/Admin/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.0185s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tpshop_goods` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`goods_name`,`goods_price`,`goods_number`,`goods_logo`,`goods_create_time` FROM `tpshop_goods` ORDER BY id desc LIMIT 0,3   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001705s ]
+
